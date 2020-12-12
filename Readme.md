@@ -3,6 +3,7 @@
 <a href='https://rollnoandresult.herokuapp.com'>Live Demo</a>
 
 ## Table of Contents
+
  -[Description](#description)
  -[Getting Started](#getting-started)
  -[Dependencies](#dependencies)
@@ -49,7 +50,7 @@ Run "npm run dev" to start both the frontend and backend at the same time
 <a href='https://nodemon.io/'>nodemon</a>
 
 ## Example
-![Alt text](example.gif) / ![](example.gif)
+![Alt text](example.gif)
 
 ## Test Cases
   Request  | Response | Screenshot
