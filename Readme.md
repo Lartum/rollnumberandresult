@@ -4,20 +4,20 @@
 
 ## Table of Contents
 
- -[Description](#description)
- -[Getting Started](#getting-started)
- -[Dependencies](#dependencies)
-    -[Frontend](#fronted)
-    -[Backend](#backend)    
- -[Example](#example)
- -[Test Cases](#test-cases) 
- -[Code Section](#code-section)
-    -[Frontend Code](#frontend-code)
-      -[Handling Submit](#handle-submit)
-      -[Table](#table)
-    -[Backend Code](#backend-code)
-      -[Result Route](#result-route)
-      -[Result Function](#result-function)
+ - [Description](#description)
+ - [Getting Started](#getting-started)
+ - [Dependencies](#dependencies)
+    - [Frontend](#fronted)
+    - [Backend](#backend)    
+ - [Example](#example)
+ - [Test Cases](#test-cases) 
+ - [Code Section](#code-section)
+    - [Frontend Code](#frontend-code)
+      - [Handling Submit](#handle-submit)
+      - [Table](#table)
+    - [Backend Code](#backend-code)
+      - [Result Route](#result-route)
+      - [Result Function](#result-function)
        
 ## Description
 
