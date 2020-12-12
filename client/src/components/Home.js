@@ -68,9 +68,11 @@ const Home = () => {
             setCloseError(false)
             return
         }
-        const notRollNumber = rollnos.split(',').some(onlyNumbers)
-        if(notRollNumber){
-            setError('Please enter only roll numbers, seperated by commas as: 23, 12, 13')
+        const invalidrollnumbers = await rollnos.split(',').some(isNaN)
+        console.log(invalidrollnumbers)
+
+        if(invalidrollnumbers){
+            setError('Enter Valid Roll Numbers')
             setCloseError(false)
             return
         }
@@ -79,19 +81,15 @@ const Home = () => {
         setResult(null)
         const response = await axios.post('/api/result', { rollnos })
         if (response) {
+            if(response.status === 406){
+                setError(response.data)
+                return
+            }
             setResult(response.data)
             setLoading(false)
             setDisableButton(false)
         }
 
-    }
-
-    const onlyNumbers = (rollnumber) => {
-        const validNumber = parseInt(rollnumber) 
-        if(typeof(validNumber) !== Number){
-            return false
-        } 
-        return true
     }
     return (
         <Paper className={classes.root}>
